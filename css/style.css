@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
   color: #333;
   font-size: 1.6rem;
   line-height: 2;
@@ -36,8 +37,7 @@ th {
 
 .gl-header {
   height: 140px;
-  background: 
-    linear-gradient(
+  background: linear-gradient(
       110deg,
       #000 0%,
       rgb(27 18 18 / 70%) 70%,
@@ -70,4 +70,23 @@ th {
   height: 640px;
   background: url("../images/main.jpg") center top / cover no-repeat;
   box-shadow: inset 0 2px 5px #555;
+}
+
+.top-time li,
+.top-rank li {
+  border-bottom: 1px dotted #ccc;
+}
+
+/*-------------------------
+  メニュー
+-------------------------*/
+
+.menu {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.menu li {
+  border-bottom: 1px dotted #ccc;
 }
