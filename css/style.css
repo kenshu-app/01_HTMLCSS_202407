@@ -36,11 +36,22 @@ th {
 
 .gl-header {
   height: 140px;
-  background: url("../images/wood.jpg") 0 0 / contain repeat-x;
+  background: 
+    linear-gradient(
+      110deg,
+      #000 0%,
+      rgb(27 18 18 / 70%) 70%,
+      rgb(27 18 18 / 80%) 100%
+    ),
+    url("../images/wood.jpg") 0 0 / contain repeat-x;
+  background-blend-mode: hard-light;
 }
 
 .logo {
-  filter: drop-shadow(0 .5px 2px rgb(0 0 0 / .6));
+  width: 200px;
+  height: 65px;
+  text-indent: -9999px;
+  background: url("../images/logo.png") 0 0 / cover no-repeat;
 }
 
 .gl-footer {
