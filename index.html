@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ウッディカフェ | 表参道のオープンカフェ</title>
         <meta name="description" content="2015年表参道駅のそばにオープンした閑静な住宅街に囲まれたオープンカフェ。スタイリッシュなカフェでほっと一息お寛ぎください。">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -16,10 +16,18 @@
                 <h1 class="logo"><a href="index.html">Woody Cafe</a></h1>
                 <nav class="gl-nav">
                     <ul>
-                        <li><a href="index.html"><i class="fa fa-home"></i> ホーム</a></li>
-                        <li><a href="menu.html"><i class="fa fa-cutlery"></i> メニュー</a></li>
-                        <li><a href="info.html"><i class="fa fa-map-marker"></i> 店舗情報</a></li>
-                        <li><a href="contact.html"><i class="fa fa-wpforms"></i> お問い合わせ</a></li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-home"></i> ホーム</a>
+                        </li>
+                        <li>
+                            <a href="menu.html"><i class="fa fa-cutlery"></i> メニュー</a>
+                        </li>
+                        <li>
+                            <a href="info.html"><i class="fa fa-map-marker"></i> 店舗情報</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"><i class="fa fa-wpforms"></i> お問い合わせ</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -31,25 +39,27 @@
                 <p>緑豊かな街並みで、ゆったりとした時間の流れを楽しみ、<br>リラックスできる場所を提供いたします。</p>
             </div>
         </section>
-        <div class="container">
+        <div class="container top-parent">
             <main class="top-main">
-                <section class="top-time">
-                    <h2><i class="fa fa-clock-o"></i> 営業時間</h2>
-                    <ol>
-                        <li><strong>月～木曜日</strong>　6:30～22:00</li>
-                        <li><strong>金曜日</strong>　6:30～23:00</li>
-                        <li><strong>土・日曜日</strong>　6:30～20:00</li>
-                    </ol>
-                </section>
-                <section class="top-rank">
-                    <h2><i class="fa fa-comments-o"></i> オススメ人気メニューベスト3</h2>
-                    <ul>
-                        <li>カリカリベーコン付きロコモコ</li>
-                        <li>大きめパプリカのガパオライス</li>
-                        <li>トマトたっぷりオムライス</li>
-                    </ul>
-                    <p><a href="menu.html#other">その他のメニューはこちら</a></p>
-                </section>
+                <div class="top-order">
+                    <section class="top-time">
+                        <h2><i class="fa fa-clock-o"></i> 営業時間</h2>
+                        <ul>
+                            <li><strong>月～木曜日</strong>　6:30～22:00</li>
+                            <li><strong>金曜日</strong>　6:30～23:00</li>
+                            <li><strong>土・日曜日</strong>　6:30～20:00</li>
+                        </ul>
+                    </section>
+                    <section class="top-rank">
+                        <h2><i class="fa fa-comments-o"></i> オススメ人気メニューベスト3</h2>
+                        <ol>
+                            <li>カリカリベーコン付きロコモコ</li>
+                            <li>大きめパプリカのガパオライス</li>
+                            <li>トマトたっぷりオムライス</li>
+                        </ol>
+                        <p><a href="menu.html#other">その他のメニューはこちら</a></p>
+                    </section>
+                </div>
                 <section class="top-news">
                     <h2><i class="fa fa-newspaper-o"></i> トピックス</h2>
                     <dl>
@@ -66,17 +76,24 @@
             </main>
             <aside class="top-side">
                 <section class="sns">
-                    <a class="twitter-timeline" data-lang="ja" data-width="300" data-height="480" data-theme="dark" href="https://twitter.com/omotesando_info?ref_src=twsrc%5Etfw">Tweets by omotesando_info</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a class="twitter-timeline" data-lang="ja" data-width="300" data-height="480" data-theme="dark" href="https://twitter.com/omotesando_info?ref_src=twsrc%5Etfw">Tweets by omotesando_info</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </section>
                 <ul class="banner">
                     <li>
-                        <a href="menu.hml"><img src="images/ban01.jpg" alt="メニューバナー"></a>
+                        <a href="menu.html">
+                    <img src="images/ban01.jpg" alt="メニューバナー">
+                </a>
                     </li>
                     <li>
-                        <a href="#"><img src="images/ban02.jpg" alt="ブログバナー"></a>
+                        <a href="#">
+                    <img src="images/ban02.jpg" alt="ブログバナー">
+                </a>
                     </li>
                     <li>
-                        <a href="info.hml"><img src="images/ban03.jpg" alt="アクセスバナー"></a>
+                        <a href="info.html">
+                    <img src="images/ban03.jpg" alt="アクセスバナー">
+                </a>
                     </li>
                 </ul>
             </aside>
