@@ -43,6 +43,7 @@ em {
 
 ol,
 ul {
+  padding-left: 0;
   list-style-type: none;
 }
 
@@ -57,25 +58,48 @@ tr:nth-of-type(odd) {
 
 th,
 td {
+  padding: 20px;
   border: 1px solid #ccc;
 }
 
 th {
-  text-align: left;
   vertical-align: top;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+textarea {
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 10px 0 30px;
 }
 
 /*-------------------------
   グローバル
 -------------------------*/
 
+.container {
+  max-width: 980px;
+  margin: auto;
+}
+
 .gl-header {
   height: 140px;
+  padding-top: 15px;
   background: linear-gradient(
       110deg,
       #000 0%,
-      rgb(27 18 18 / 70%) 70%,
-      rgb(27 18 18 / 80%) 100%
+      rgb(27 18 18 / 0.7) 70%,
+      rgb(27 18 18 / 0.8) 100%
     ),
     url("../images/wood.jpg") 0 0 / contain repeat-x;
   background-blend-mode: hard-light;
@@ -84,13 +108,44 @@ th {
 .logo {
   width: 200px;
   height: 65px;
-  text-indent: -9999px;
+  margin-bottom: 15px;
   background: url("../images/logo.png") 0 0 / cover no-repeat;
+}
+
+.logo a {
+  display: block;
+  width: 200px;
+  height: 65px;
+  text-indent: -9999px;
+}
+
+.gl-nav ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.gl-nav li {
+  display: table-cell;
+  text-align: center;
+  border-right: 2px solid #000;
+}
+
+.gl-nav li a {
+  display: block;
+  color: #ccc;
+  text-shadow: 0 0 5px #000;
+}
+
+.gl-nav li a:hover {
+  color: #a86;
 }
 
 .gl-footer {
   height: 120px;
-  background: #211 url("../images/grunge.jpg") 0 top repeat-x;
+  padding-top: 50px;
+  margin-top: 50px;
+  background: #211 url("../images/grunge.jpg") 0 0 repeat-x;
   color: #ccc;
   letter-spacing: 0.3em;
   text-align: center;
@@ -103,12 +158,13 @@ th {
 .top-welcome {
   height: 640px;
   background: url("../images/main.jpg") center top / cover no-repeat;
-  box-shadow: inset 0 2px 5px #555;
+  box-shadow: inset 0 2px 5px #000;
 }
 
 .top-rank a[href$="#other"]::after {
   font-family: FontAwesome;
   content: "\f18e";
+  margin-left: 5px;
 }
 
 .top-rank a[href$="#other"] {
@@ -121,18 +177,34 @@ th {
 }
 
 .top-news dd:first-of-type::after {
-  content: 'NEW!';
+  content: "NEW!";
   color: #fff;
   font-size: 1rem;
+  background-color: #900;
   font-weight: bold;
-  padding: 3px;
-  background-color: #990000;
   border-radius: 3px;
-  text-align: center;
+  padding: 3px;
 }
 
 .top-side a:hover {
   opacity: 0.7;
+}
+
+.sns {
+  margin-bottom: 20px;
+}
+
+/*-------------------------
+  セカンド
+-------------------------*/
+
+.menus > h2,
+.info > h2,
+.movie > h2,
+.map > h2,
+.contact > h2 {
+  margin: 50px 0 20px;
+  border-bottom: 2px dotted #422;
 }
 
 /*-------------------------
@@ -140,6 +212,8 @@ th {
 -------------------------*/
 
 .menu {
+  padding: 20px 30px;
+  margin-bottom: 100px;
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 0 3px #ccc;
